@@ -11,14 +11,19 @@ a {
 	margin-right: auto;
 }
 
+
+
 #titulo {
-    
+    color: rgb(255, 255, 255);
     display: flex;
     margin-left: 10%;
-    font-size: 4vw;
+    /* margin-bottom: 20%; */
+    font-size: 5vw;
 }
 
-
+#contenedor{
+    width: 1vw;
+}
 
 #btn {
     text-decoration: none;
@@ -26,7 +31,7 @@ a {
     padding: 8px 30px;
     color: #fff;
     font-family: 'Poppins', sans-serif;
-    font-size: 1vw;
+    font-size: 2vw;
     font-weight: 500;
     letter-spacing: 2px;
     background: #110011;
@@ -36,22 +41,23 @@ a {
 }
 
 #btn:hover {
-  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5), 0 0 20px rgba(49, 138, 172, 0.4);
+  /* box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5), 0 0 20px rgba(49, 138, 172, 0.4); */
   outline-color: rgba(49, 138, 172, 0);
-  background: rgb(190, 255, 244);
+  background: rgb(255, 255, 255);
   color: #000;
+  border: 2px black solid;
   outline-offset: 80px;
-  text-shadow: 1px 1px 6px #fff;
+  /* text-shadow: 1px 1px 6px #fff; */
 
 }
 
 header {
     width: 100%;
-    height: 100vh;
+    height: 50vw;
     position: sticky;
     top: calc(-100vh + 3em);
     z-index: 1;
-    background-image: url(../img/fotografia-de-arquitectura-02-100.jpg);
+    background-image: url(../img/unnamed.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -65,12 +71,107 @@ header > p {
     font-size: 2em;
 }
 
-.parallax {
-    height: 350px;
-    background-image: url(../img/luna.jpg);
-    background-position: bottom center;
-    background-size: cover;
-    background-attachment: fixed;
+#menu {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 3em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+}
+
+#menu > ul {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu > ul > li {
+    list-style: none;
+}
+
+a {
+    color: grey;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#menu > i,
+#menu > ul > li > a,
+#menu > ul > li:last-child {
+    color: white;
+}
+
+#menu > i,
+#menu > ul > li:last-child {
+    display: none;
+}
+
+section {
+    width: 80%;
+    max-width: 1500px;
+    margin: auto;
+    padding: 2em 0;
+}
+
+h2,
+p,
+section > ul {
+    margin: 1rem 0;
+}
+
+@media screen and (max-width: 750px) {
+
+    header > p {
+        font-size: 1.5em;
+    }
+
+    #menu > i {
+        display: block;
+        cursor: pointer;
+    }
+
+    #menu > ul {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        z-index: 1;
+        padding: 30% 0;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.9);
+        transition-duration: 1s;
+    }
+
+
+    #menu > ul > li > a {
+        text-decoration: none;
+        font-size: 2em;
+    }
+
+    #menu > ul > li:last-child {
+        display: block;
+        position: absolute;
+        right: 2em;
+        top: 2em;
+    }
+
+    #menu > ul > li:last-child > i {
+        color: white;
+        font-size: 2em;
+        cursor: pointer;
+    }
 }
 
 body {

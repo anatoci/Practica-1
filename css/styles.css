@@ -21,7 +21,9 @@ a {
     font-size: 5vw;
 }
 
-
+#contenedor{
+    width: 1vw;
+}
 
 #btn {
     text-decoration: none;
@@ -170,14 +172,6 @@ section > ul {
         font-size: 2em;
         cursor: pointer;
     }
-}
-
-.parallax {
-    height: 350px;
-    background-image: url(../img/patterson-kinloch-3-1600x1071.jpg);
-    background-position: bottom center;
-    background-size: cover;
-    background-attachment: fixed;
 }
 
 body {

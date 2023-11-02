@@ -21,9 +21,7 @@ a {
     font-size: 5vw;
 }
 
-#contenedor{
-    width: 1vw;
-}
+
 
 #btn {
     text-decoration: none;
@@ -184,7 +182,9 @@ body {
     font-size: 4vw;
 }
 
-.inicio {
+#buttons{
+    width: 100%;
+    height: 4vw;
     display: flex;
 }
 
@@ -192,29 +192,40 @@ body {
 #btn2 {
     text-decoration: none;
     display: inline-block;
-    padding: 8px 30px;
+    padding: 1vw 1vw;
     color: #fff;
     font-family: 'Poppins', sans-serif;
     font-size: 1vw;
     font-weight: 500;
     letter-spacing: 2px;
     background: #110011;
-    border-radius: 30px; 
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
     transform: translateY(20px); 
     transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 #btn2:hover {
-  /* box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5), 0 0 20px rgba(49, 138, 172, 0.4); */
   outline-color: rgba(49, 138, 172, 0);
   background: rgb(255, 255, 255);
   color: #000;
   border: 2px black solid;
   outline-offset: 80px;
+  /* display: flex;
+    align-items: center; */
   /* text-shadow: 1px 1px 6px #fff; */
 
 }
 
+#gallery{
+    width: 100%;
+    height: 20vw;
+}
+
+#random {
+    font-size: 1em;
+}
 
 
 .row {

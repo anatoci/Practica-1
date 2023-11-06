@@ -63,7 +63,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
 }
 
 header > p {
@@ -118,7 +118,7 @@ section {
     width: 80%;
     max-width: 1500px;
     margin: auto;
-    padding: 2em 0;
+    padding: 3em 0;
 }
 
 h2,
@@ -171,15 +171,6 @@ section > ul {
         font-size: 2em;
         cursor: pointer;
     }
-}
-
-
-.parallax {
-    height: 350px;
-    background-image: url(../img/vectoresinicio.jpeg);
-    background-position: bottom center;
-    background-size: cover;
-    background-attachment: fixed;
 }
 
 body {

@@ -1,7 +1,7 @@
 * {
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -52,6 +52,7 @@ header > p {
     justify-content: space-between;
     align-items: center;
     padding: 0 1em;
+
 }
 
 #menu > ul {
@@ -68,7 +69,7 @@ header > p {
 }
 
 a {
-    color: grey;
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
@@ -144,6 +145,10 @@ section > ul {
         font-size: 2em;
         cursor: pointer;
     }
+}
+
+#footer > h5 > a {
+    color: rgb(43, 135, 135);
 }
 
 .container {

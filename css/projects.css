@@ -29,7 +29,8 @@ header {
     position: sticky;
     top: calc(-100vh + 3em);
     z-index: 1;
-    background-image: url(../img/proyectis.jpg);
+    background-image: url(../img/projects.inicio.png);
+    filter: grayscale(100%);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

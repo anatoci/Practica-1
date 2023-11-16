@@ -2408,6 +2408,10 @@ textarea.form-control-lg {
   border: var(--bs-border-width) solid var(--bs-border-color);
   -webkit-print-color-adjust: exact;
   color-adjust: exact;
+  <<<<<<< HEAD
+  print-color-adjust: exact;
+  =======
+>>>>>>> c492e70a509939e3b9508f3b0cd41cd4441affca
 }
 .form-check-input[type=checkbox] {
   border-radius: 0.25em;

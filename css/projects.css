@@ -16,7 +16,8 @@ h2 {
 }
 
 h1 {
-    font-size: 8vw;
+    font-size: 8vw !important;
+    font-weight: 600 !important;
 }
 
 h2 {
@@ -26,7 +27,7 @@ h2 {
 header {
     width: 100%;
     height: 100vh;
-    position: sticky;
+    position: sticky !important;
     top: calc(-100vh + 3em);
     z-index: 1;
     background-image: url(../img/projects.inicio.png);
@@ -36,8 +37,8 @@ header {
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: center !important;
+    align-items: center !important;
 }
 
 header > p {
@@ -45,24 +46,25 @@ header > p {
 }
 
 #menu {
-    position: absolute;
+    position: absolute !important;
     bottom: 0;
     width: 100%;
     height: 3em;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 0 1em;
+    align-items: center !important;
+    padding: 0 1em !important;
 
 }
 
 #menu > ul {
     width: 100%;
     height: 100%;
-    padding: 0;
+    padding: 0 !important;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 0 !important;
 }
 
 #menu > ul > li {
@@ -71,11 +73,11 @@ header > p {
 
 a {
     color: rgb(255, 255, 255);
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: underline !important;
 }
 
 #menu > i,
@@ -92,8 +94,8 @@ a:hover {
 section {
     width: 80%;
     max-width: 1500px;
-    margin: auto;
-    padding: 3em 0;
+    margin: auto !important;
+    padding: 3em 0 !important;
 }
 
 h2,
@@ -114,13 +116,13 @@ section > ul {
     }
 
     #menu > ul {
-        position: fixed;
+        position: fixed !important;
         top: 0;
         left: -100%;
         width: 100%;
         height: 100vh;
         z-index: 1;
-        padding: 30% 0;
+        padding: 30% 0 !important;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
